@@ -62,8 +62,6 @@ html, body {
       color: #ffff;
       font-size: 35px;
       z-index: 1;
-
-      
 }
 
 .morewine {
@@ -90,15 +88,16 @@ button:focus {
 }
 
 button:hover {
-      background: #c89253;
-      color: #110b07;
+      background: rgba(0,0,0,1);
+      color: #c89253;
 }
 
 .wines {
       position: absolute;
       width: 100%;
       height: 100vh;
-      background: url(solid.jpg);
+      /*background: url(solid.jpg);*/
+      background-color: #fff;
       z-index: 1;
       opacity: 0;
 }
@@ -144,10 +143,10 @@ button:hover {
       width: 80%;
       opacity: 0;
       text-align: center;
-      font-family: Helvetica;
+      font-family: 'Helvetica', sans-serif;
       text-transform: uppercase;
       letter-spacing: 4px;
-      color: #fff;
+      color: rgba(0,0,0,1);
       z-index: 1;
       transform: scaleY(1) translateY(-30px);
       transition: transform .2s, opacity .5s;
@@ -160,6 +159,9 @@ button:hover {
 .wines button {
       margin-top: 10px;
       padding: 16px 28px;
+      font-size: 1rem;
+      border: 1px solid rgba(0,0,0,1);
+
 }
 
 h1 {
@@ -182,7 +184,7 @@ h1 {
       padding: 2.5em;
       letter-spacing: 2px;
       font-size: 1.6em;
-      font-family: "Cookie";
+      font-family: 'Cookie', sans-serif;
       color: #fff;
       transition: 0.3s;
       z-index: 3;
